@@ -1,0 +1,22 @@
+Name: NAVEEN KUMAR A G, Roll no: 210123075
+
+1. Start your TCP client application without the TCP server running. What happens? Why?
+
+Observation: 
+The client application fails to establish a connection to the server, resulting in an error message.
+Reasoning:
+TCP is a connection based protocol, which requires a handshake to be established before any data is
+sent from client to the server. In this question, without the server running, a handshake cannot be made, 
+so data cannot be sent from the client to the server. 
+
+
+2. Start your UDP client application without the UDP server running. What happens? Why?
+
+Observation: 
+The client application doesn't establish a formal connection to the server. This is evident from the fact
+that the client receives no response to its queries.
+Reasoning:
+UDP is a connectionless protocol and doesn't prioritise data integrity, or in other words doesn't 
+require a handshake to be established before any data is sent from client to the server. In this 
+question, without the server running, the data sent from the client is lost due to which the client 
+never receives a response.
